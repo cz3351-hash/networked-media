@@ -1,0 +1,63 @@
+body{
+    background-image:url("water.jpg");
+    /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin:0;
+}
+
+@font-face {
+  font-family: mRenta;
+  src: url(MRenta.otf); 
+}
+
+.clock {
+
+  font-family: mRenta;
+  /* font-size:120px; */
+  position:relative;
+
+}
+
+.hour{
+    font-size: 370px;
+    position: absolute;
+     top: 160px;
+  left: 330px;
+  transition: 0.3s ease;
+}
+
+.minute{
+    font-size: 250px;
+    position: absolute;
+    top: 270px;
+  left: 740px;
+  transition: 0.3s ease;
+}
+.second{
+    font-size: 150px;
+    position:absolute;
+    top: 230px;
+  left: 1070;
+  /* transition: 0.5s ; */
+}
+
+.date{
+      font-family: mRenta;
+  text-align: center; 
+margin-top:60px;
+  color: white;
+  font-size:20px;
+  letter-spacing:5px;
+  transition: opacity 0.3s ;
+}
+
+#water{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  z-index: -1;        
+}
