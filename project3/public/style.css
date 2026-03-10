@@ -1,0 +1,116 @@
+@font-face {
+  font-family: fifties;
+  src: url(fiftiesmovies.ttf);
+}
+
+@font-face {
+  font-family: simple;
+  src: url(simple.otf);
+}
+
+/* not used at the moment */
+
+body {
+  text-align: center;
+  background-color: black;
+}
+
+.pillowmaker {
+  font-family: fifties;
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  /* background-image: url("home.PNG");
+  background-size: cover;      
+  background-position: center; 
+  height: 100vh;              */
+  font-family: monospace;
+  font-size: 13px;
+  color: aliceblue;
+  text-align: left;
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.nopurple {
+  color: aliceblue;
+}
+
+.nopurple:visited {
+  color: aliceblue;
+}
+
+.members {
+  text-align: center;
+}
+
+/* ???? */
+
+.guestbook {
+  color: aliceblue;
+  font-family: monospace;
+}
+
+.pillowImg {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-family: fifties;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  font-family: monospace;
+}
+
+.fifties {
+  font-family: fifties;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.enter {
+  font-family: fifties;
+  letter-spacing: 2px
+}
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.galleryItem {
+  width: 200px;
+  text-align: center;
+  color: aliceblue;
+  font-family: monospace;
+  /* font-family: fifties; */
+  /* letter-spacing:2px */
+}
+
+.galleryPillow {
+  width: 100%;
+  height: auto;
+  display: block;
+}
