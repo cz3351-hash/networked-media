@@ -1,0 +1,193 @@
+/* .tree {
+  display: grid;
+  grid-template-columns: repeat(25, 10px);
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+} */
+ @font-face {
+  font-family: pixel1;
+  src: url(pixelspace.ttf);
+}
+ @font-face {
+  font-family: pixel2;
+  src: url(pixelwarden.ttf);
+}
+
+
+body {
+  background-image: url("/images/finalbg.png");
+  /* background-color: #85BB65; */
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat; 
+    align-items: center;
+      /* cursor: url("/cursor.png") 8 8, auto; */
+       cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🦜</text></svg>") 16 0, auto;
+
+}
+
+
+
+.tree {
+  overflow: visible;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 42vh;
+ 
+}
+
+.pixel {
+  position: relative;
+  overflow: visible;
+}
+
+.leaf-label {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 10px;
+  color: black;
+  white-space: nowrap;
+  font-family: pixel1;
+}
+
+.clock {
+  color: brown;
+  font-size:20px;
+  font-family: pixel2;
+  position: fixed;
+  top: 56px;
+  right: 74px;
+
+}
+
+.date {
+  color: brown;
+  font-size: 20px;
+  font-family: pixel2;
+ position: fixed;
+  top: 121px;
+  right: 75px;
+}
+/* .season {
+  color: white;
+  font-size: 20px;
+  font-family: pixel2;
+ position: fixed;
+  top: 178px;
+  right: 72px;
+} */
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 310px;
+  left: 40px;
+  width: 250;
+  height: 250px;  
+  background: url("/images/popup.PNG") center center no-repeat;
+  background-size: contain;
+}
+
+#popupText {
+  margin: 6;
+  font-size: 16px;
+  color: brown;
+  font-family: pixel1;
+    position: relative;
+  top: 12px;    
+  left: 10px;  
+}
+
+#inputLeaf {
+  background: rgba(255, 255, 255, 0.6);
+  font-family: pixel1;
+   position: relative;
+  top: 40px;    
+  left: 20px;  
+  display: block;
+  border-color: brown;
+}
+
+#submitLeaf {
+  background: brown;
+  color: white;
+  font-family: pixel2;
+
+     position: relative;
+  top: 45px;    
+  left: 20px; 
+  display: block; 
+}
+
+#weatherGif {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  height: 90vh;  
+  width: auto;  
+  max-width: 95vw;
+}
+
+.indextext{
+ font-family: pixel1;
+ color:white;
+ position: fixed;
+  top: 30px;
+  left: 40px
+}
+
+.history{
+  font-family: pixel1;
+  color:white;
+  position: fixed;
+  background-image: url("/images/ogbg.png");
+  overflow-y: auto;  
+  text-align: center;
+  left:45%
+
+}
+
+.historytitle{
+  font-family:pixel2;
+  top:30px;
+  position:relative;
+  
+
+}
+
+.about{
+  /* font-family: pixel1;
+  color:white;
+  position: fixed; */
+  background-image: url("/images/abbg.png");
+
+  
+}
+.aboutheader{
+  font-family:pixel2;
+  /* background: url("/images/about.PNG") center center no-repeat; */
+  /* background-size: contain; */
+  font-size: 25px;
+}
+
+.abouttext{
+text-align: center;
+
+  font-family: pixel1;
+  color:brown;
+  position: relative;
+  top:230px;
+  font-size:18px;
+}
+
+.back{
+  font-size:15px;
+}

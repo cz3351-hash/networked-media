@@ -1,0 +1,20 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="history">
+  <div>
+    <h1 class="historytitle">past leaves</h1>
+    <br><br>
+    <p><a href="/">back to the garden</a></p>
+      <% leaves.forEach(function (leaf) { %>
+        <p>
+          name: <%= leaf.text %>
+          <br>
+          pixel: <%= leaf.pixelId %>
+        </p>
+
+      <% }); %>
+  </div>
+</body>
+</html>

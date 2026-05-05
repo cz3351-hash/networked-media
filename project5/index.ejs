@@ -1,0 +1,53 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<div class="tree"></div>
+<div class="clock"></div>
+<div class="date"></div>
+<div class="season"></div>
+
+
+<div id="popup" style="display: none;">
+  <form id="leaf-form">
+    <p id="popupText">Oops!
+      <br><br><br>You swept a leaf down. <br><br>Please give it a name to revive the leaf!
+    </p>
+    <input type="text" id="inputLeaf" placeholder="Name this leaf..." required />
+    <button type="submit" id="submitLeaf">Save</button>
+  </form>
+</div>
+
+<img id="weatherGif" style="display:none;" />
+
+<div class="indextext">
+<p>welcome,
+<br> please explore <a href ="/about">my garden</a>! 
+<br><br>
+<br> leaves will fall as you navigate the garden,
+<br>but you can always revive them by giving each a name.
+<br><br> click here for <a href="/history">history</a>
+<br><br><br> also, the weather may change and activities may take place
+<br> so pay attention to your clicks!
+
+
+
+
+</p>
+</div>
+
+  <script src="/main.js"></script>
+<!-- <audio controls loop>
+  <source src="/images/gardenbirds.MP3" type="audio/ogg">
+</audio> -->
+<!-- <EMBED src="gardenbirds.MP3" autostart=true loop=true hidden=true> -->
+<audio id="birds" loop>
+  <source src="/gardenbirds.MP3" type="audio/mpeg">
+</audio>
+
+  
+</body>
+</html>
